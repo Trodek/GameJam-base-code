@@ -55,16 +55,14 @@
     <ClCompile Include="j1Console.cpp">
       <Filter>Desenvolupament  ========\Modules</Filter>
     </ClCompile>
-<<<<<<< HEAD
     <ClCompile Include="Sprite2D.cpp">
       <Filter>Desenvolupament  ========\Tools</Filter>
-=======
+	</ClCompile>
     <ClCompile Include="ModulePhysics.cpp">
       <Filter>Desenvolupament  ========\Modules</Filter>
     </ClCompile>
     <ClCompile Include="FirstScene.cpp">
       <Filter>Desenvolupament  ========\Scenes\FirstScene</Filter>
->>>>>>> origin/master
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -170,13 +168,12 @@
     <ClInclude Include="j1Console.h">
       <Filter>Desenvolupament  ========\Modules</Filter>
     </ClInclude>
-<<<<<<< HEAD
     <ClInclude Include="Animation.h">
       <Filter>Desenvolupament  ========\Tools</Filter>
     </ClInclude>
     <ClInclude Include="Sprite2D.h">
       <Filter>Desenvolupament  ========\Tools</Filter>
-=======
+	</ClInclude>
     <ClInclude Include="ModulePhysics.h">
       <Filter>Desenvolupament  ========\Modules</Filter>
     </ClInclude>
@@ -185,7 +182,6 @@
     </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>Desenvolupament  ========\Scenes</Filter>
->>>>>>> origin/master
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

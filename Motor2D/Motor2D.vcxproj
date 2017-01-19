@@ -98,20 +98,14 @@
     <ClCompile Include="Sprite2D.cpp" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ClInclude Include="Animation.h" />
-=======
     <ClInclude Include="FirstScene.h" />
->>>>>>> origin/master
     <ClInclude Include="j1Console.h" />
     <ClInclude Include="ModulePhysics.h" />
     <ClInclude Include="p2PQueue.h" />
     <ClInclude Include="p2Stack.h" />
-<<<<<<< HEAD
     <ClInclude Include="Sprite2D.h" />
-=======
     <ClInclude Include="Scene.h" />
->>>>>>> origin/master
     <ClInclude Include="UICheckBox.h" />
     <ClInclude Include="UIImage.h" />
     <ClInclude Include="UIButton.h" />
