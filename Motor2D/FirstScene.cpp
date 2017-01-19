@@ -29,6 +29,9 @@ FirstScene::~FirstScene()
 
 bool FirstScene::Start()
 {
+	// XML load test
+	pugi::xml_document doc; App->LoadXML("test.xml", doc);
+	int value = doc.child("test").attribute("value").as_int();
 	return true;
 }
 

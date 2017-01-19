@@ -60,6 +60,10 @@ public:
 
 	float Getdt() const;
 
+	void LoadXML(char* path, pugi::xml_document& doc);
+
+
+
 private:
 
 	// Load config file
