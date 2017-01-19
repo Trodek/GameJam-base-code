@@ -16,6 +16,7 @@
 #include "j1Gui.h"
 #include "j1App.h"
 #include "j1Console.h"
+#include "ModulePhysics.h"
 
 // Constructor
 j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
@@ -34,6 +35,7 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	font = new j1Fonts();
 	gui = new j1Gui();
 	console = new j1Console();
+	physics = new ModulePhysics();
 
 	// Ordered for awake / Start / Update
 	// Reverse order of CleanUp
@@ -47,6 +49,7 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	AddModule(map);
 	AddModule(pathfinding);
 	AddModule(font);
+	AddModule(physics);
 
 	// scene last
 	AddModule(scene);
@@ -456,4 +459,9 @@ bool j1App::SavegameNow() const
 	data.reset();
 	want_to_save = false;
 	return ret;
+}
+
+float j1App::Getdt() const
+{
+	return dt;
 }

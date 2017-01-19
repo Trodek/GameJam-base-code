@@ -55,8 +55,16 @@
     <ClCompile Include="j1Console.cpp">
       <Filter>Desenvolupament  ========\Modules</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="Sprite2D.cpp">
       <Filter>Desenvolupament  ========\Tools</Filter>
+=======
+    <ClCompile Include="ModulePhysics.cpp">
+      <Filter>Desenvolupament  ========\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstScene.cpp">
+      <Filter>Desenvolupament  ========\Scenes\FirstScene</Filter>
+>>>>>>> origin/master
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -162,11 +170,22 @@
     <ClInclude Include="j1Console.h">
       <Filter>Desenvolupament  ========\Modules</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="Animation.h">
       <Filter>Desenvolupament  ========\Tools</Filter>
     </ClInclude>
     <ClInclude Include="Sprite2D.h">
       <Filter>Desenvolupament  ========\Tools</Filter>
+=======
+    <ClInclude Include="ModulePhysics.h">
+      <Filter>Desenvolupament  ========\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="FirstScene.h">
+      <Filter>Desenvolupament  ========\Scenes\FirstScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Desenvolupament  ========\Scenes</Filter>
+>>>>>>> origin/master
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +209,9 @@
     </Filter>
     <Filter Include="Desenvolupament  ========\GuiElements">
       <UniqueIdentifier>{91929050-ff15-49c6-8d1a-d0883940ca37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Desenvolupament  ========\Scenes\FirstScene">
+      <UniqueIdentifier>{30de3c1e-510f-4697-ac3a-045816dd495f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

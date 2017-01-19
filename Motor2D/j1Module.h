@@ -12,6 +12,7 @@
 
 class j1App;
 class UIElement;
+class PhysBody;
 
 class j1Module
 {
@@ -86,6 +87,11 @@ public:
 	}
 
 	virtual void SaveCVar(p2SString& cvar_name, pugi::xml_node& node) const {
+
+	}
+
+	virtual void OnCollision(PhysBody* bodyA, PhysBody* bodyB)
+	{
 
 	}
 
