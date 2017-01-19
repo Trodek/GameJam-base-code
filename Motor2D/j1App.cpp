@@ -466,7 +466,7 @@ float j1App::Getdt() const
 	return dt;
 }
 
-void j1App::LoadXML(char* path, pugi::xml_document& doc)
+void j1App::LoadXML(const char* path, pugi::xml_document& doc)
 {
 	LOG("Loading %s XML", path);
 

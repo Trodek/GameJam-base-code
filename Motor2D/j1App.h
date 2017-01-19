@@ -60,7 +60,7 @@ public:
 
 	float Getdt() const;
 
-	void LoadXML(char* path, pugi::xml_document& doc);
+	void LoadXML(const char* path, pugi::xml_document& doc);
 
 
 

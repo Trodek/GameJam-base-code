@@ -57,12 +57,18 @@
     </ClCompile>
     <ClCompile Include="Sprite2D.cpp">
       <Filter>Desenvolupament  ========\Tools</Filter>
-	</ClCompile>
+    </ClCompile>
     <ClCompile Include="ModulePhysics.cpp">
       <Filter>Desenvolupament  ========\Modules</Filter>
     </ClCompile>
     <ClCompile Include="FirstScene.cpp">
       <Filter>Desenvolupament  ========\Scenes\FirstScene</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Entities.cpp">
+      <Filter>Desenvolupament  ========\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Desenvolupament  ========\Entities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -173,7 +179,7 @@
     </ClInclude>
     <ClInclude Include="Sprite2D.h">
       <Filter>Desenvolupament  ========\Tools</Filter>
-	</ClInclude>
+    </ClInclude>
     <ClInclude Include="ModulePhysics.h">
       <Filter>Desenvolupament  ========\Modules</Filter>
     </ClInclude>
@@ -182,6 +188,12 @@
     </ClInclude>
     <ClInclude Include="Scene.h">
       <Filter>Desenvolupament  ========\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Entities.h">
+      <Filter>Desenvolupament  ========\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Desenvolupament  ========\Entities</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -208,6 +220,9 @@
     </Filter>
     <Filter Include="Desenvolupament  ========\Scenes\FirstScene">
       <UniqueIdentifier>{30de3c1e-510f-4697-ac3a-045816dd495f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Desenvolupament  ========\Entities">
+      <UniqueIdentifier>{90103453-b9fe-475d-8f07-32e94c4ce961}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
