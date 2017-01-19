@@ -4,6 +4,10 @@
 #include "j1Module.h"
 
 struct SDL_Texture;
+
+class Scene;
+class FirstScene;
+
 class UIImage;
 class UILabel;
 class UIButton;
@@ -40,6 +44,12 @@ public:
 	bool CleanUp();
 
 	void UIReaction(UIElement* element, int react);
+
+	void ChangeScene(Scene* new_scene);
+
+	Scene* current_scene = nullptr;
+
+	FirstScene* first_scene = nullptr;
 
 private:
 	SDL_Texture* debug_tex;
