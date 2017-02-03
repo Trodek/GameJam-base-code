@@ -2,25 +2,19 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="j1Window.cpp">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="j1Audio.cpp">
-      <Filter>Game Logic\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="j1App.cpp">
-      <Filter>Game Logic</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="j1Input.cpp">
-      <Filter>Game Logic\Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="j1Main.cpp">
-      <Filter>Game Logic</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="j1Render.cpp">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="j1Textures.cpp">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="p2Log.cpp">
       <Filter>Containers</Filter>
@@ -29,72 +23,69 @@
       <Filter>Game Logic\Scenes</Filter>
     </ClCompile>
     <ClCompile Include="j1FileSystem.cpp">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="PugiXml\src\pugixml.cpp">
-      <Filter>Game Logic\Tools\PuguiXML</Filter>
+      <Filter>Application\Tools\PuguiXML</Filter>
     </ClCompile>
     <ClCompile Include="j1Map.cpp">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="j1Pathfinding.cpp">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="j1Timer.cpp">
-      <Filter>Game Logic\Tools</Filter>
+      <Filter>Application\Tools</Filter>
     </ClCompile>
     <ClCompile Include="j1PerfTimer.cpp">
-      <Filter>Game Logic\Tools</Filter>
+      <Filter>Application\Tools</Filter>
     </ClCompile>
     <ClCompile Include="j1Fonts.cpp">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="j1Gui.cpp">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="j1Console.cpp">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="Sprite2D.cpp">
-      <Filter>Game Logic\Tools</Filter>
+      <Filter>Application\Tools</Filter>
     </ClCompile>
     <ClCompile Include="ModulePhysics.cpp">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="FirstScene.cpp">
       <Filter>Game Logic\Scenes\FirstScene</Filter>
     </ClCompile>
     <ClCompile Include="j1Entities.cpp">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClCompile>
     <ClCompile Include="Entity.cpp">
       <Filter>Game Logic\Entities</Filter>
     </ClCompile>
-    <ClCompile Include="p2Tree.cpp">
-      <Filter>Containers</Filter>
+    <ClCompile Include="j1Main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="j1App.cpp">
+      <Filter>Application</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="j1Window.h">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="j1Audio.h">
-      <Filter>Game Logic\Modules</Filter>
-    </ClInclude>
-    <ClInclude Include="j1App.h">
-      <Filter>Game Logic</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="j1Input.h">
-      <Filter>Game Logic\Modules</Filter>
-    </ClInclude>
-    <ClInclude Include="j1Module.h">
-      <Filter>Game Logic</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="j1Render.h">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="j1Textures.h">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="p2Defs.h">
       <Filter>Containers</Filter>
@@ -118,43 +109,43 @@
       <Filter>Game Logic\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="j1FileSystem.h">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="PugiXml\src\pugiconfig.hpp">
-      <Filter>Game Logic\Tools\PuguiXML</Filter>
+      <Filter>Application\Tools\PuguiXML</Filter>
     </ClInclude>
     <ClInclude Include="PugiXml\src\pugixml.hpp">
-      <Filter>Game Logic\Tools\PuguiXML</Filter>
+      <Filter>Application\Tools\PuguiXML</Filter>
     </ClInclude>
     <ClInclude Include="j1Map.h">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="j1Pathfinding.h">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="j1Timer.h">
-      <Filter>Game Logic\Tools</Filter>
+      <Filter>Application\Tools</Filter>
     </ClInclude>
     <ClInclude Include="j1PerfTimer.h">
-      <Filter>Game Logic\Tools</Filter>
+      <Filter>Application\Tools</Filter>
     </ClInclude>
     <ClInclude Include="j1Fonts.h">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="j1Gui.h">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="UIElement.h">
-      <Filter>Game Logic\GuiElements</Filter>
+      <Filter>Application\GuiElements</Filter>
     </ClInclude>
     <ClInclude Include="UILabel.h">
-      <Filter>Game Logic\GuiElements</Filter>
+      <Filter>Application\GuiElements</Filter>
     </ClInclude>
     <ClInclude Include="UIButton.h">
-      <Filter>Game Logic\GuiElements</Filter>
+      <Filter>Application\GuiElements</Filter>
     </ClInclude>
     <ClInclude Include="UIImage.h">
-      <Filter>Game Logic\GuiElements</Filter>
+      <Filter>Application\GuiElements</Filter>
     </ClInclude>
     <ClInclude Include="p2PQueue.h">
       <Filter>Containers</Filter>
@@ -163,28 +154,28 @@
       <Filter>Containers</Filter>
     </ClInclude>
     <ClInclude Include="UIWindow.h">
-      <Filter>Game Logic\GuiElements</Filter>
+      <Filter>Application\GuiElements</Filter>
     </ClInclude>
     <ClInclude Include="UIInputText.h">
-      <Filter>Game Logic\GuiElements</Filter>
+      <Filter>Application\GuiElements</Filter>
     </ClInclude>
     <ClInclude Include="UIScrollBar.h">
-      <Filter>Game Logic\GuiElements</Filter>
+      <Filter>Application\GuiElements</Filter>
     </ClInclude>
     <ClInclude Include="UICheckBox.h">
-      <Filter>Game Logic\GuiElements</Filter>
+      <Filter>Application\GuiElements</Filter>
     </ClInclude>
     <ClInclude Include="j1Console.h">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="Animation.h">
-      <Filter>Game Logic\Tools</Filter>
+      <Filter>Application\Tools</Filter>
     </ClInclude>
     <ClInclude Include="Sprite2D.h">
-      <Filter>Game Logic\Tools</Filter>
+      <Filter>Application\Tools</Filter>
     </ClInclude>
     <ClInclude Include="ModulePhysics.h">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="FirstScene.h">
       <Filter>Game Logic\Scenes\FirstScene</Filter>
@@ -193,13 +184,16 @@
       <Filter>Game Logic\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="j1Entities.h">
-      <Filter>Game Logic\Modules</Filter>
+      <Filter>Application\Modules</Filter>
     </ClInclude>
     <ClInclude Include="Entity.h">
       <Filter>Game Logic\Entities</Filter>
     </ClInclude>
-    <ClInclude Include="p2Tree.h">
-      <Filter>Containers</Filter>
+    <ClInclude Include="j1Module.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="j1App.h">
+      <Filter>Application</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -209,31 +203,34 @@
     <Filter Include="Game Logic">
       <UniqueIdentifier>{cb944693-b9d0-484c-bad2-02d5a7cdbec6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Game Logic\Tools">
-      <UniqueIdentifier>{42c748be-4a37-49de-970f-5be811d06b38}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Game Logic\Tools\PuguiXML">
-      <UniqueIdentifier>{7cb78d67-17cc-45eb-af97-e2106becce7b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Game Logic\Scenes">
       <UniqueIdentifier>{e07660eb-d36f-4cc9-af59-324d31c2f2f6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Game Logic\Scenes\FirstScene">
       <UniqueIdentifier>{30de3c1e-510f-4697-ac3a-045816dd495f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Game Logic\Modules">
-      <UniqueIdentifier>{244722d1-90ce-423d-8e7a-556211865a32}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Game Logic\GuiElements">
-      <UniqueIdentifier>{91929050-ff15-49c6-8d1a-d0883940ca37}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Game Logic\Entities">
       <UniqueIdentifier>{90103453-b9fe-475d-8f07-32e94c4ce961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{cd1ba791-ae92-47f7-9d13-a673c0d6ea38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Tools">
+      <UniqueIdentifier>{42c748be-4a37-49de-970f-5be811d06b38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Tools\PuguiXML">
+      <UniqueIdentifier>{7cb78d67-17cc-45eb-af97-e2106becce7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Modules">
+      <UniqueIdentifier>{244722d1-90ce-423d-8e7a-556211865a32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\GuiElements">
+      <UniqueIdentifier>{91929050-ff15-49c6-8d1a-d0883940ca37}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\Game\config.xml">
-      <Filter>Game Logic</Filter>
+      <Filter>Application</Filter>
     </Xml>
   </ItemGroup>
 </Project>
