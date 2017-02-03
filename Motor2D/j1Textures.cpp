@@ -47,11 +47,12 @@ bool j1Textures::Start()
 bool j1Textures::CleanUp()
 {
 	LOG("Freeing textures and Image library");
-	p2List_item<SDL_Texture*>* item;
+	p2List_item<Texture*>* item;
 
 	for(item = textures.start; item != NULL; item = item->next)
 	{
-		SDL_DestroyTexture(item->data);
+		SDL_DestroyTexture(item->data->tex);
+		RELEASE(item->data);
 	}
 
 	textures.clear();
@@ -62,17 +63,21 @@ bool j1Textures::CleanUp()
 // Load new texture from file path
 SDL_Texture* const j1Textures::Load(const char* path)
 {
-	SDL_Texture* texture = NULL;
-	SDL_Surface* surface = IMG_Load_RW(App->fs->Load(path), 1);
-
-	if(surface == NULL)
-	{
-		LOG("Could not load surface with path: %s. IMG_Load: %s", path, IMG_GetError());
+	SDL_Texture* texture = nullptr;
+	
+	/// Check if the texture is already loaded
+	for (p2List_item<Texture*>* tex = textures.start; tex; tex = tex->next){
+		if (tex->data->path == path) {
+			texture = tex->data->tex;
+			break;
+		}
 	}
-	else
-	{
-		texture = LoadSurface(surface);
-		SDL_FreeSurface(surface);
+
+	/// If the texture doesn't exist, load it on memory
+	if (texture == nullptr) {
+		Texture* new_tex = new Texture(path);
+		texture = new_tex->tex;
+		textures.add(new_tex);
 	}
 
 	return texture;
@@ -81,13 +86,14 @@ SDL_Texture* const j1Textures::Load(const char* path)
 // Unload texture
 bool j1Textures::UnLoad(SDL_Texture* texture)
 {
-	p2List_item<SDL_Texture*>* item;
+	p2List_item<Texture*>* item;
 
 	for(item = textures.start; item != NULL; item = item->next)
 	{
-		if(texture == item->data)
+		if(texture == item->data->tex)
 		{
-			SDL_DestroyTexture(item->data);
+			SDL_DestroyTexture(item->data->tex);
+			RELEASE(item->data);
 			textures.del(item);
 			return true;
 		}
@@ -105,10 +111,6 @@ SDL_Texture* const j1Textures::LoadSurface(SDL_Surface* surface)
 	{
 		LOG("Unable to create texture from surface! SDL Error: %s\n", SDL_GetError());
 	}
-	else
-	{
-		textures.add(texture);
-	}
 
 	return texture;
 }
@@ -117,4 +119,25 @@ SDL_Texture* const j1Textures::LoadSurface(SDL_Surface* surface)
 void j1Textures::GetSize(const SDL_Texture* texture, uint& width, uint& height) const
 {
 	SDL_QueryTexture((SDL_Texture*)texture, NULL, NULL, (int*) &width, (int*) &height);
+}
+
+Texture::Texture()
+{
+}
+
+Texture::Texture(const char * path)
+{
+	SDL_Surface* surface = IMG_Load_RW(App->fs->Load(path), 1);
+
+	if (surface == NULL)
+	{
+		LOG("Could not load surface with path: %s. IMG_Load: %s", path, IMG_GetError());
+	}
+	else
+	{
+		tex = App->tex->LoadSurface(surface);
+		SDL_FreeSurface(surface);
+
+		this->path.create(path);
+	}
 }

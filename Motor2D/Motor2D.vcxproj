@@ -96,6 +96,7 @@
     <ClCompile Include="j1Render.cpp" />
     <ClCompile Include="j1Textures.cpp" />
     <ClCompile Include="j1Window.cpp" />
+    <ClCompile Include="p2Tree.cpp" />
     <ClCompile Include="PugiXml\src\pugixml.cpp" />
     <ClCompile Include="Sprite2D.cpp" />
   </ItemGroup>
@@ -108,6 +109,7 @@
     <ClInclude Include="ModulePhysics.h" />
     <ClInclude Include="p2PQueue.h" />
     <ClInclude Include="p2Stack.h" />
+    <ClInclude Include="p2Tree.h" />
     <ClInclude Include="Sprite2D.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="UICheckBox.h" />

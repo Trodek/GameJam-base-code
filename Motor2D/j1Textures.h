@@ -7,6 +7,14 @@
 struct SDL_Texture;
 struct SDL_Surface;
 
+struct Texture {
+	SDL_Texture* tex;
+	p2SString path;
+
+	Texture();
+	Texture(const char* path);
+};
+
 class j1Textures : public j1Module
 {
 public:
@@ -33,7 +41,7 @@ public:
 
 public:
 
-	p2List<SDL_Texture*>	textures;
+	p2List<Texture*>	textures;
 };
 
 
